@@ -15,41 +15,6 @@ class Rules {
   }
 
 
-        /*char find = InStockCards.get(0).charAt(0);
-
-        switch (find) {
-            case 'S':
-                ek = 6;
-                break;
-            case '$':
-                ek = 7;
-                break;
-            case 'E':
-                ek = 8;
-                break;
-            case 'N':
-                ek = 9;
-                break;
-            case 'T':
-                ek = 10;
-                break;
-            case 'A':
-                ek = 11;
-                break;
-            case 'K':
-                ek = 4;
-                break;
-            case 'J':
-                ek = 2;
-                break;
-            case 'L':
-                ek = 3;
-                break;
-
-        }
-
-     */
-
 
 
     public boolean RuleOfEnd(int Sum1, int Sum2, String name) {
