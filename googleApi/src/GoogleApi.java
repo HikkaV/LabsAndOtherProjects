@@ -8,5 +8,6 @@ public class GoogleApi
     public static void main(String[] args) {
         int mas []= new int [20];
         Arrays.stream(mas).sorted().max();
+        ///sffasff
     }
 }
