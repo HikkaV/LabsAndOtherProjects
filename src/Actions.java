@@ -4,7 +4,6 @@ class Actions  {
     public void GetCard(LinkedList<String> InStockCards) {
 
         InStockCards.add(Cards.CARDS.get(0));
-       // Rules.CalcPoints(InStockCards);
         Cards.CARDS.remove(0);
 
 
