@@ -6,9 +6,9 @@ public class Graf {
     public static void main(String[] args) throws IOException {
         FileData fileData = new FileData();
         ShowData showData = new ShowData();
-        Actions actions = new Actions();
+        MainActions actions = new MainActions();
         fileData.MakeFile();
-        Messages getMes = new Messages();
+        GetMessages getMes = new GetMessages();
         Map<String, Integer> graf = new LinkedHashMap<>();
         Map<Integer, String> lastgraf = new TreeMap<>();
         FileReader fr = new FileReader("C:\\Users\\Andre\\InputData.txt");

@@ -1,6 +1,6 @@
 import java.util.Map;
 
-public class Actions extends  Messages{
+public class MainActions extends  GetMessages{
     public void firstResult(Map<String, Integer> graf, String origin , String destination){
         if (graf.containsKey(origin + "-" + destination)) {
            Result(origin, destination);

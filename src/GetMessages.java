@@ -3,7 +3,7 @@
 import java.util.Map;
 import java.util.TreeMap;
 
-public class Messages {
+public class GetMessages {
     public void WrongInput(){
         System.out.println("You entered the wrong data , your input data has to be in range [1:5]");
     }
