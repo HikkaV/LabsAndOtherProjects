@@ -18,4 +18,11 @@ public class Messages {
 public void QuaOfPeaks(String qua){
     System.out.println("The graf consists of 5 peaks");
 }
+public void wayOfPeaks(String orbase, String destination){
+    System.out.println("All the possible ways from " + orbase + " to "+destination);
 }
+public  void  getDiameter(TreeMap<Integer, String> diametergraf){
+    System.out.println("Diameter " +diametergraf.lastEntry().getValue()+" length "+diametergraf.lastEntry().getKey());
+}
+}
+

@@ -10,8 +10,12 @@ public class Actions extends  Messages{
 
     }
 
+
     public  void Output(Map<Integer, String> lastgraf){for (Map.Entry entry : lastgraf.entrySet()) {
         System.out.println(entry.getValue() + " " + entry.getKey());
     }
+
     }
-}
+
+
+    }
