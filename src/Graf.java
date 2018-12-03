@@ -14,7 +14,7 @@ public class Graf {
         LinkedList<String> wayrep = new LinkedList<>();
         SearchOfLength searchOfLength = new SearchOfLength();
         SearchOfWay searchOfWay = new SearchOfWay();
-        fileData.fillGraf(graf);
+        fileData.fillGraph(graf);
         getMes.QuaOfPeaks(fileData.qua);
         getMes.ShowMap(graf);
         String origin = actions.Checking(fileData.qua);
@@ -22,7 +22,7 @@ public class Graf {
         String destination = actions.Checking(fileData.qua);
         searchOfLength.lengthSearch(graf, valuerep, destination, origin, orbase);
         searchOfWay.waySearch(graf, wayrep, destination, origin, orbase);
-        actions.MakeGraf(lastgraf, valuerep, wayrep);
+        actions.MakeGraph(lastgraf, valuerep, wayrep);
         getMes.Output(lastgraf);
         getMes.FinalResult(lastgraf);
 

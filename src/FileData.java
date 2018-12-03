@@ -3,7 +3,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class FileData {
-    String path = "D:\\InputData.txt" ;
+    private String path = "D:\\InputData.txt" ;
     String qua = "";
     public void MakeFile() throws IOException {
         File InputData = new File(path);
@@ -20,10 +20,9 @@ public class FileData {
 
         fw.close();
     }
-    public void fillGraf(Map<Pair, Integer> graf) throws FileNotFoundException {
+    public void fillGraph(Map<Pair, Integer> graf) throws FileNotFoundException {
     FileReader fr = new FileReader(path);
     Scanner sc = new Scanner(fr);
-
         while (sc.hasNext()) {
         qua = sc.next();
         while (sc.hasNextLine()) {

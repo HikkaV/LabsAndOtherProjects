@@ -11,13 +11,13 @@ public class MainActions extends GetMessages {
         Scanner scanner = new Scanner(System.in);
         String destination = scanner.next();
         while (Integer.parseInt(destination) > Integer.parseInt(qua) || Integer.parseInt(destination) < 1) {
-            WrongInput();
+            WrongInput(qua);
             destination = scanner.next();
         }
         return destination;
     }
 
-    public void MakeGraf(Map<Integer, String> lastgraf, LinkedList<Integer> valuerep, LinkedList<String> wayrep) {
+    public void MakeGraph(Map<Integer, String> lastgraf, LinkedList<Integer> valuerep, LinkedList<String> wayrep) {
         for (int i = 0; i < valuerep.size(); i++) {
             lastgraf.put(valuerep.get(i), wayrep.get(i));
         }
