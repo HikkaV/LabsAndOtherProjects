@@ -5,7 +5,6 @@ import java.util.*;
 public class Graf {
     public static void main(String[] args) throws IOException {
         FileData fileData = new FileData();
-        ShowData showData = new ShowData();
         MainActions actions = new MainActions();
         fileData.MakeFile();
         GetMessages getMes = new GetMessages();
@@ -16,20 +15,15 @@ public class Graf {
         SearchOfLength searchOfLength = new SearchOfLength();
         SearchOfWay searchOfWay = new SearchOfWay();
         fileData.fillGraf(graf);
-
         getMes.QuaOfPeaks(fileData.qua);
-        showData.ShowMap(graf);
+        getMes.ShowMap(graf);
         String origin = actions.Checking(fileData.qua);
         String orbase = origin;
         String destination = actions.Checking(fileData.qua);
         searchOfLength.lengthSearch(graf, valuerep, destination, origin, orbase);
         searchOfWay.waySearch(graf, wayrep, destination, origin, orbase);
-        for (int i = 0; i < valuerep.size(); i++) {
-            lastgraf.put(valuerep.get(i), wayrep.get(i));
-        }
-
-
-        showData.Output(lastgraf);
+        actions.MakeGraf(lastgraf, valuerep, wayrep);
+        getMes.Output(lastgraf);
         getMes.FinalResult(lastgraf);
 
 
